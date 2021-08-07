@@ -6,11 +6,11 @@ import numpy as np
 video_capture = cv2.VideoCapture(0)
 
 # Load a sample picture and learn how to recognize it.
-Mo_image = face_recognition.load_image_file("Moamr.jpg")
-Mo_face_encoding = face_recognition.face_encodings(Mo_image)[0]
+Mo_image = face_recognition.load_image_file("Eh.jpg")
+Mo_face_encoding = face_recognition.face_encodings(Eh_image)[0]
 
 Ali_image = face_recognition.load_image_file("EngAly.png")
-Aly_face_encoding = face_recognition.face_encodings(Ali_image)[0]
+Aly_face_encoding = face_recognition.face_encodings(malk_image)[0]
 
 Messi_image = face_recognition.load_image_file("Messi.jpg")
 Messi_face_encoding = face_recognition.face_encodings(Messi_image)[0]
@@ -23,15 +23,15 @@ Salah_face_encoding = face_recognition.face_encodings(Salah_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
-    Mo_face_encoding,
-    Aly_face_encoding,
+    Eh_face_encoding,
+    malk_face_encoding,
     Messi_face_encoding,
     Ronaldo_face_encoding,
     Salah_face_encoding
 ]
 known_face_names = [
-    "Mohamed Amr",
-    "Ali Osama",
+    "Ehab Ebrahim",
+    "malak salah",
     "Messi",
     "Ronaldo",
     "Salah"
